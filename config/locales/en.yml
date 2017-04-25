@@ -2,8 +2,10 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
   errors:
     not_implemented:
       resources: Resource fetcher is not implemented
       creator: Creator is not implemented
+  spree:
+    connect: 'Connect'
+    shopify_importer: 'Shopify Importer'

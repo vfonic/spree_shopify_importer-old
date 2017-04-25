@@ -1,0 +1,17 @@
+<% content_for :page_title do %>
+  <%= Spree.t(:shopify_importer) %>
+<% end %>
+
+<%= form_tag admin_new_shopify_importer_session_path, method: :get do %>
+  <div class="row">
+    <div class="col-xs-6 col-md-3">
+      <%= text_field_tag 'shop', nil, placeholder: 'example.myshopify.com', class: 'form-control' %>
+    </div>
+
+    <div class="col-xs-6 col-md-2">
+      <div class="form-actions" data-hook="buttons">
+        <%= button_tag Spree.t(:connect), class: 'btn btn-success', data: { disable_with: "#{ Spree.t(:loading) }..." } %>
+      </div>
+    </div>
+  </div>
+<% end %>

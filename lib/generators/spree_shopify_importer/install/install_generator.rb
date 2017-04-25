@@ -2,6 +2,7 @@ module SpreeShopifyImporter
   module Generators
     class InstallGenerator < Rails::Generators::Base
       class_option :auto_run_migrations, type: :boolean, default: false
+      source_root File.expand_path('../templates', __FILE__)
 
       def add_javascripts
         append_file('vendor/assets/javascripts/spree/frontend/all.js',
@@ -33,6 +34,14 @@ module SpreeShopifyImporter
         else
           puts "Skipping rails db:migrate, don't forget to run it!"
         end
+      end
+
+      def create_shopify_app_initializer
+        template 'shopify_app.rb', 'config/initializers/shopify_app.rb'
+
+        puts %(
+          Don't forget to set SHOPIFY_API_KEY and SHOPIFY_API_SECRET environment variables!
+        )
       end
     end
   end
