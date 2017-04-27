@@ -6,7 +6,7 @@ module SpreeShopifyImporter
       include ShopifyApp::SessionsConcern
 
       def shop_session
-        @shop_session ||= ShopifyApp::SessionRepository.retrieve
+        @shop_session ||= ShopifyApp::SessionRepository.retrieve(nil)
       end
 
       protected

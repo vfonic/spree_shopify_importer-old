@@ -7,10 +7,12 @@ module Spree
       end
 
       def self.retrieve(_id = nil)
-        ShopifyAPI::Session.new(
-          Spree::ShopifyImporter::Config.shopify_domain,
-          Spree::ShopifyImporter::Config.shopify_token
-        )
+        domain = Spree::ShopifyImporter::Config.shopify_domain
+        token = Spree::ShopifyImporter::Config.shopify_token
+
+        return if domain.blank? || token.blank?
+
+        ShopifyAPI::Session.new(domain, token)
       end
     end
   end

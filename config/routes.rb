@@ -7,6 +7,4 @@ Spree::Core::Engine.add_routes do
   # TODO: secure this mounting so customers can't connect to their store and import products from their store, possibly
   # breaking the whole store
   # mount ShopifyApp::Engine, at: "#{Spree.admin_path}/shopify-importer"
-
-  # root to: :admin_shopify_importer
 end

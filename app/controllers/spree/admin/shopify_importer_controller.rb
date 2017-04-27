@@ -12,9 +12,9 @@ module Spree
       helper 'spree/admin/navigation'
       layout 'spree/layouts/admin'
 
-      def index
-        shopify_session
-      end
+      around_action :shopify_session, only: :index
+
+      def index; end
     end
   end
 end
