@@ -10,3 +10,10 @@ ShopifyApp.configure do |config|
 end
 
 ShopifyApp::SessionRepository.storage = Spree::ShopifyImporter::SessionStorage
+
+# shop = Shop.first
+# session = ShopifyAPI::Session.new(shop.shopify_domain, shop.shopify_token)
+# ShopifyAPI::Base.activate_session(session)
+# ShopifyAPI::Product.all
+# This one might be needed to prevent loading whatever shopify loads when there's an active session
+# ShopifyAPI::Base.clear_session

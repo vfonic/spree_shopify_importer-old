@@ -7,5 +7,6 @@ Deface::Override.new(
           Spree.t(:shopify_importer),
           spree.admin_shopify_importer_path
         ) if can? :manage, Spree::ShopifyImporter %>
-  "
+  ",
+  original: '41c9125ad4022e7dac858458620c2a141e4f49d0'
 )
