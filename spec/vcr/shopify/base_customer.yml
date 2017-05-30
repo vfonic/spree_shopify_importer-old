@@ -1,0 +1,120 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://test_shop.myshopify.com/admin/customers/4654675207.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic ZjQ0MGU3MGFkOGI5MDM0NWUxN2VhNjQwNzBjZjVlNTQ6ZTRkYzQ3MmY1YThjNWMyZjEwMWYwY2ExYjRmZmMyMWU=
+      Accept:
+      - application/json
+      User-Agent:
+      - ShopifyAPI/4.8.0 ActiveResource/5.0.0 Ruby/2.4.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 28 May 2017 09:02:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '19'
+      - '19'
+      X-Sorting-Hat-Podid-Cached:
+      - '0'
+      - '0'
+      X-Sorting-Hat-Shopid:
+      - '13135303'
+      - '13135303'
+      X-Sorting-Hat-Section:
+      - pod
+      - pod
+      X-Sorting-Hat-Shopid-Cached:
+      - '0'
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - origin-when-cross-origin
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '13135303'
+      X-Shardid:
+      - '19'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '1359087'
+      X-Stats-Apipermissionid:
+      - '20910403'
+      Content-Security-Policy:
+      - 'default-src ''self'' data: blob: ''unsafe-inline'' ''unsafe-eval'' https://*
+        shopify-pos://*; block-all-mixed-content; child-src ''self'' https://* shopify-pos://*;
+        connect-src ''self'' wss://* https://*; script-src https://cdn.shopify.com
+        https://checkout.shopifycs.com https://js-agent.newrelic.com https://bam.nr-data.net
+        https://dme0ih8comzn4.cloudfront.net https://api.stripe.com https://mpsnare.iesnare.com
+        https://appcenter.intuit.com https://www.paypal.com https://maps.googleapis.com
+        https://stats.g.doubleclick.net https://www.google-analytics.com https://visitors.shopify.com
+        https://v.shopify.com https://widget.intercom.io https://js.intercomcdn.com
+        ''self'' ''unsafe-inline'' ''unsafe-eval''; upgrade-insecure-requests; report-uri
+        /csp-report?source%5Baction%5D=show&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Fcustomers&source%5Bsection%5D=admin&source%5Buuid%5D=e62e75a0-969f-4d1c-aa49-a03e8d5f1109'
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report?source%5Baction%5D=show&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=admin%2Fcustomers&source%5Bsection%5D=admin&source%5Buuid%5D=e62e75a0-969f-4d1c-aa49-a03e8d5f1109
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Dc:
+      - chi2,ash
+      X-Request-Id:
+      - e62e75a0-969f-4d1c-aa49-a03e8d5f1109
+    body:
+      encoding: ASCII-8BIT
+      string: '{"customer":{"id":4654675207,"email":"viktor.fonic@gmail.com","accepts_marketing":false,"created_at":"2016-09-08T16:46:05+02:00","updated_at":"2017-05-13T10:00:15+02:00","first_name":"Viktor","last_name":"Fonic","orders_count":8,"state":"enabled","total_spent":"0.00","last_order_id":5587204564,"note":"","verified_email":true,"multipass_identifier":null,"tax_exempt":false,"phone":null,"tags":"6877381767,
+        6877416391, 6877450695, 6877488327, 7153428807, 7154224775, Box-Selection,
+        Medical","last_order_name":"n. 8462","default_address":{"id":6119638026,"first_name":"Viktor","last_name":"Fonic","company":null,"address1":"Rokova
+        48","address2":"","city":"Split","province":"Padova","country":"Italy","zip":"21000","phone":"","name":"Viktor
+        Fonic","province_code":"PD","country_code":"IT","country_name":"Italy","default":true},"addresses":[{"id":5106224266,"first_name":"Viktor","last_name":"Fonic","company":"","address1":"2
+        Herbert street","address2":"Ballsbridge","city":"Dublin","province":"Ancona","country":"Italy","zip":"CAP","phone":"+353894289683","name":"Viktor
+        Fonic","province_code":"AN","country_code":"IT","country_name":"Italy","default":false},{"id":5106852106,"first_name":"Viktor","last_name":"Fonic","company":"","address1":"2
+        Herbert street","address2":"Ballsbridge","city":"Dublin","province":"Aosta","country":"Italy","zip":"QAIR","phone":"+353894289683","name":"Viktor
+        Fonic","province_code":"AO","country_code":"IT","country_name":"Italy","default":false},{"id":5107480714,"first_name":"Viktor","last_name":"Fonic","company":"","address1":"2
+        Herbert street","address2":"","city":"Dublin","province":"Agrigento","country":"Italy","zip":"DA","phone":"+353894289683","name":"Viktor
+        Fonic","province_code":"AG","country_code":"IT","country_name":"Italy","default":false},{"id":5107659082,"first_name":"Viktor","last_name":"Fonic","company":"","address1":"2
+        Herbert street","address2":"","city":"Dublin","province":"Cagliari","country":"Italy","zip":"CAP","phone":"","name":"Viktor
+        Fonic","province_code":"CA","country_code":"IT","country_name":"Italy","default":false},{"id":5107659146,"first_name":"Viktor","last_name":"Fonic","company":"Microsoft","address1":"2
+        Herbert street","address2":"Ballsbridge","city":"Dublin","province":"Cagliari","country":"Italy","zip":"CAP","phone":"+353894289683","name":"Viktor
+        Fonic","province_code":"CA","country_code":"IT","country_name":"Italy","default":false},{"id":5115247626,"first_name":"Viktor","last_name":"Fonic","company":"","address1":"2
+        Herbert street","address2":"Ballsbridge","city":"Dublin","province":"Padova","country":"Italy","zip":"CAP","phone":"+353894289683","name":"Viktor
+        Fonic","province_code":"PD","country_code":"IT","country_name":"Italy","default":false},{"id":6119637834,"first_name":"Viktor","last_name":"Fonic","company":null,"address1":"Osjecka
+        58","address2":"","city":"Padova","province":"Padova","country":"Italy","zip":"cap","phone":"","name":"Viktor
+        Fonic","province_code":"PD","country_code":"IT","country_name":"Italy","default":false},{"id":6119638026,"first_name":"Viktor","last_name":"Fonic","company":null,"address1":"Rokova
+        48","address2":"","city":"Split","province":"Padova","country":"Italy","zip":"21000","phone":"","name":"Viktor
+        Fonic","province_code":"PD","country_code":"IT","country_name":"Italy","default":true}]}}'
+    http_version:
+  recorded_at: Sun, 28 May 2017 09:02:17 GMT
+recorded_with: VCR 3.0.3
