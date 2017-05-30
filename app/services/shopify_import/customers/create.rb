@@ -6,7 +6,7 @@ module ShopifyImport
       end
 
       def save!
-        Spree::User.transaction do
+        Spree.user_class.transaction do
           @spree_user = create_spree_user
           assign_spree_user_to_data_feed
           generate_api_key
@@ -17,7 +17,9 @@ module ShopifyImport
 
       def create_spree_user
         temp_password = SecureRandom.hex(64)
-        user = Spree::User.new(customer_attributes.merge(password: temp_password, password_confirmation: temp_password))
+        user = Spree.user_class.new(
+          customer_attributes.merge(password: temp_password, password_confirmation: temp_password)
+        )
         user.try(:skip_confirmation!)
         user.save!
         user
