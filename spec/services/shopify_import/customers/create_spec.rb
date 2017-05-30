@@ -14,16 +14,16 @@ RSpec.describe ShopifyImport::Customers::Create do
       end
 
       it 'create spree user' do
-        expect { subject.save! }.to change(Spree::User, :count).by(1)
+        expect { subject.save! }.to change(Spree.user_class, :count).by(1)
       end
 
       it 'assigns shopify data feed to spree user' do
         subject.save!
-        expect(customer_data_feed.reload.spree_object).to eq(Spree::User.find_by!(email: shopify_customer.email))
+        expect(customer_data_feed.reload.spree_object).to eq(Spree.user_class.find_by!(email: shopify_customer.email))
       end
 
       context 'customer attributes' do
-        let(:spree_user) { Spree::User.find_by!(email: shopify_customer.email) }
+        let(:spree_user) { Spree.user_class.find_by!(email: shopify_customer.email) }
 
         before { subject.save! }
 
