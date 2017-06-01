@@ -13,7 +13,7 @@ module ShopifyImport
     end
 
     def initiate_import!
-      ShopifyImport::ProductsImporter.import!
+      ShopifyImport::Importers::ProductsImporter.new.import!
     end
   end
 end
