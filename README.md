@@ -2,26 +2,30 @@
 [![Code Climate](https://codeclimate.com/github/spark-solutions/spree_shopify_importer/badges/gpa.svg)](https://codeclimate.com/github/spark-solutions/spree_shopify_importer)
 [![Test Coverage](https://codeclimate.com/github/spark-solutions/spree_shopify_importer/badges/coverage.svg)](https://codeclimate.com/github/spark-solutions/spree_shopify_importer/coverage)
 
-SpreeShopifyImporter
+Spree Shopify Importer
 ====================
 
 Introduction goes here.
 
 ## Installation
 
-1. Add this extension to your Gemfile with this line:
+1. Add these gems to your `Gemfile`:
+
   ```ruby
+  gem 'activeresource', github: 'rails/activeresource'
   gem 'spree_shopify_importer', github: 'spark-solutions/spree_shopify_importer'
   ```
 
 2. Install the gem using Bundler:
+
   ```shell
   bundle install
   ```
 
-3. Copy & run migrations
+3. Run the install generator:
+
   ```shell
-  bundle exec rails g spree_shopify_importer:install
+  rails g spree_shopify_importer:install
   ```
 
 4. Restart your server

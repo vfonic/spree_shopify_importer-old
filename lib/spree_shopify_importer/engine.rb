@@ -4,6 +4,10 @@ module SpreeShopifyImporter
     isolate_namespace Spree
     engine_name 'spree_shopify_importer'
 
+    initializer 'spree.shopify_importer.environment', before: :load_config_initializers do |_app|
+      Spree::ShopifyImporter::Config = Spree::ShopifyImporterConfiguration.new
+    end
+
     # use rspec for tests
     config.generators do |g|
       g.test_framework :rspec
